@@ -2,6 +2,7 @@
 
 int		flag(va_list ap, const char *format, t_pr *stut)
 {
+    // printf("%c\n", format[stut->i]);
 	while (format[stut->i] == '+' || format[stut->i] == ' ' || \
 	format[stut->i] == '-' || format[stut->i] == '0' || format[stut->i] == '#')
     {

@@ -3,8 +3,8 @@ NAME = libftprintf.a
 all: $(NAME)
 
 $(NAME):
-	@gcc ./*.c ./*.h
-	@ar -rc $(NAME) ./*.o
+	@gcc ./*.c -I ./*.h
+	# @ar -rc $(NAME) ./*.o
 	@rm -rf ./*.o
 
 clean:
