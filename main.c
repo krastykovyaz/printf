@@ -15,8 +15,8 @@ int	main(void)
 	// printf("%+2.1i\n", -1);
 	// ft_printf("%+2.1i\n", -1);
 
-	printf("% 2.10i\n", 123);
-	ft_printf("% 2.10i\n", 123);
+	// printf("% 2.10i\n", 123);
+	// ft_printf("% 2.10i\n", 123);
 	// printf("% 5.3i\n", 12);
 	// ft_printf("% 5.3i\n", 12);
 	// printf("% 05.3i\n", 12);
@@ -27,8 +27,11 @@ int	main(void)
 	// ft_printf("% 01.3i\n", 1234);
 	// printf("% 2.3i\n", 1234);
 	// ft_printf("% 2.3i\n", 1234);
-	// printf("% 05i\n", 12);
-	// ft_printf("% 05i\n", 12);
+	printf("% 05i\n", 12);
+	ft_printf("% 05i\n", 12);
+	ft_printf("% -7.5i\n", 3);
+	ft_printf("%.3i\n", 3);
+	ft_printf("% 2i\n", 0);
 	// printf("% 5i\n", 12);
 	// ft_printf("% 5i\n", 12);
 	// printf("%1i\n", 123);

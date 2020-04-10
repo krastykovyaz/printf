@@ -2,7 +2,7 @@
 
 void    decimal_space_if(const char *format, int y, t_pr *stut)
 {
-    if (stut->len > stut->width || (stut->accuracy > stut->width && format[stut->i] != 'u'))
+    if ((stut->len > stut->width || stut->accuracy > stut->width) && format[stut->i] != 'u')
         ft_putchar(' ', stut);
     stut->width -= 1;
     if (stut->width > stut->accuracy)
@@ -43,7 +43,8 @@ int type_decimal_space(const char *format, t_pr *stut)
 
     y = 0;
     i = 0;
-    if (stut->accuracy-stut->len > 0)
+
+    if (stut->accuracy > stut->len)
         y = stut->accuracy - stut->len;
     else
         y = stut->accuracy;
@@ -55,7 +56,7 @@ int type_decimal_space(const char *format, t_pr *stut)
         decimal_space_if(format, y, stut);
     else
         decimal_space_else(stut);
-    if (stut->width < 0 && stut->accuracy > 0 && stut->accuracy > stut->len && stut->len && stut->a > 0 && stut->len == 1)
+    if (stut->width != 0 && stut->accuracy > 0 && stut->accuracy > stut->len && stut->a > 0)
         i = y;
     else if (stut->accuracy > 0 && stut->accuracy > stut->len)
     {

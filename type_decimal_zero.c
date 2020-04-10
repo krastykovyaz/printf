@@ -5,12 +5,13 @@ int decimal_pzero(t_pr *stut)
     int i;
 
     i = 0;
-    if (stut->width > stut->len)
+    if ((stut->width && stut->len) || stut->space)
     {
+        // printf("f\n");
         if (stut->accuracy >= stut->len)
         {
             i = stut->width - stut->accuracy;
-            i = (stut->a < 0) ? i - 1 : 1;
+            i = (stut->a < 0) ? i - 1 : i;
         }
         else
             i = stut->width - stut->len;
@@ -25,8 +26,12 @@ int decimal_pzero(t_pr *stut)
                 ft_putnchar('0', i, stut);
             }
         }
+        else if (stut->space)
+        {
+            ft_putchar(' ', stut);
+        }
     }
-    return (i);
+        return (i);
 }
 
 int type_decimal_zero(t_pr *stut)
