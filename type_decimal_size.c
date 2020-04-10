@@ -15,10 +15,10 @@ void type_decimal_priority(const char *format, t_pr *stut)
             type_decimal_minus(stut);
         else if (stut->plus)
             type_decimal_plus(format, stut);
-        else if (stut->zero)
-            type_decimal_zero(stut);
         else if (stut->space)
             type_decimal_space(format, stut);
+        else if (stut->zero)
+            type_decimal_zero(stut);
     }
     else
         type_decimal_regular(stut);

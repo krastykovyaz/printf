@@ -5,8 +5,9 @@ void    decimal_space_if(const char *format, int y, t_pr *stut)
     if ((stut->len > stut->width || stut->accuracy > stut->width) && format[stut->i] != 'u')
         ft_putchar(' ', stut);
     stut->width -= 1;
-    if (stut->width > stut->accuracy)
+    if (stut->width >= stut->accuracy)
     {
+        // printf("F\n");
         if (stut->accuracy && stut->accuracy > stut->len)
             ft_putnchar(' ', stut->width - stut->accuracy + 1, stut);
         else if (stut->accuracy && stut->width > stut->len && stut->zero)
@@ -14,18 +15,31 @@ void    decimal_space_if(const char *format, int y, t_pr *stut)
         else if (stut->accuracy && stut->zero)
             ft_putnchar(' ', stut->width - stut->accuracy + 1,stut);
         else if (stut->accuracy && stut->accuracy < stut->len)
+        {
+            if (stut->width == stut->accuracy && stut->accuracy < stut->len && stut->width < stut->len)
+                ft_putchar(' ', stut);
             ft_putnchar(' ', stut->width - y, stut);
+        }
+            
         else if (!stut->accuracy && stut->width > stut->len && stut->zero)
             ft_putchar(' ', stut);
         else if (!stut->accuracy && stut->width > stut->len)
             ft_putnchar(' ', (stut->width - stut->len + 1), stut);
         else if (!stut->accuracy && stut->width < stut->len)
             ft_putnchar(' ', (stut->width - stut->len + 2), stut);
+        else if (stut->accuracy < stut->width)
+            ft_putnchar(' ', (stut->width - stut->len +1), stut);
+        else if (stut->width <= stut->len)
+            ft_putchar(' ', stut);
+        // printf("w=%i\n", stut->width);
+        // printf("a=%i\n", stut->accuracy);
+        // printf("l=%i\n", stut->len);
     }
 }
 
 void    decimal_space_else(t_pr *stut)
 {
+
     if (stut->width > stut->accuracy)
     {
         if (stut->accuracy > stut->len)
