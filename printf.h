@@ -38,7 +38,7 @@ int		search_type(va_list ap, const char *format, t_pr *stut);
 int		type_decimal_size(va_list ap, const char *format, t_pr *stut);
 void    ft_putstr(const char *str, t_pr *stut);
 void	type_decimal_priority(const char *format, t_pr *stut);
-int 	decimal_pregular_space(t_pr *ssl);
+int 	decimal_pregular_space(t_pr *stut);
 int		type_decimal_regular(t_pr *stut);
 int		ft_strlen(const char *str);
 char		*ft_itoa(long long int n);
@@ -46,10 +46,12 @@ void		ft_putnchar(const char c, int i, t_pr *stut);
 void	ft_putnbr(__int128 n, t_pr *stut);
 __int128_t	convert(t_pr *stut, int base);
 int		type_decimal_minus(t_pr *stut);
-int		type_decimal_plus(const char *format, t_pr *ssl);
+int		type_decimal_plus(const char *format, t_pr *stut);
 int		type_decimal_zero(t_pr *stut);
 int 	type_decimal_space(const char *format, t_pr *stut);
-void decimal_pregular_zero(int i, t_pr *ssl);
-
+void	decimal_pregular_zero(int i, t_pr *stut);
+int		type_octal_size(va_list ap, t_pr *stut);
+int 	type_priority_octal(t_pr *stut);
+int 	type_octal_minus(t_pr *stut);
 
 #endif
