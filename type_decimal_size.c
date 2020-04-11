@@ -11,6 +11,7 @@ void type_decimal_priority(const char *format, t_pr *stut)
     free(str);
     if (stut->zero || stut->plus || stut->minus || stut->space)
     {
+        //printf("F\n");
         if (stut->minus)
             type_decimal_minus(stut);
         else if (stut->plus)

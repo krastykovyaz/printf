@@ -31,7 +31,7 @@ int type_decimal_regular(t_pr *stut)
         if (stut->width >= 0 && stut->accuracy == 0 && stut->dot == 0)
             ft_putchar('0', stut);
         else if (stut->width != 0 && stut->accuracy == 0 && stut->dot == 1)
-            ft_putchar('0', stut);
+            ft_putchar(' ', stut);
     }
     return (0);
 }

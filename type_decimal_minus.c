@@ -5,6 +5,7 @@ int type_decimal_minus(t_pr *stut)
     int i;
     
     i = 0;
+    //printf("F\n");
     if (stut->a < 0)
         ft_putchar('-', stut);
     if (stut->a >= 0 && stut->plus)

@@ -57,7 +57,7 @@ int type_decimal_space(const char *format, t_pr *stut)
 
     y = 0;
     i = 0;
-
+    // printf("F\n");
     if (stut->accuracy > stut->len)
         y = stut->accuracy - stut->len;
     else
@@ -75,9 +75,9 @@ int type_decimal_space(const char *format, t_pr *stut)
     else if (stut->accuracy > 0 && stut->accuracy > stut->len)
     {
         if (stut->len == 1)
-            y = y - 1;
+            i = y - 1;
         else
-            y = y;
+            i = y;
     }
     if (i != 0)
         ft_putnchar('0', i, stut);

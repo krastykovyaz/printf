@@ -5,7 +5,7 @@ int decimal_pzero(t_pr *stut)
     int i;
 
     i = 0;
-    if ((stut->width && stut->len) || stut->space)
+    if ((stut->width > stut->len) || stut->space)
     {
         // printf("f\n");
         if (stut->accuracy >= stut->len)
@@ -41,6 +41,7 @@ int type_decimal_zero(t_pr *stut)
 
     m = 0;
     decimal_pzero(stut);
+    //printf("F\n");
     if (stut->width > stut->len && i >= 0 && stut->a < 0 && !stut->accuracy)
         m = 1;
     if (stut->a < 0 && m == 0)
