@@ -26,7 +26,6 @@ char    *ft_itoa(long long int n)
         result[0] = '0';
         return(result);
     }
-    
     if (n < 0)
     {
         result[0] = '-';

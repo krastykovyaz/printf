@@ -53,5 +53,7 @@ void	decimal_pregular_zero(int i, t_pr *stut);
 int		type_octal_size(va_list ap, t_pr *stut);
 int 	type_priority_octal(t_pr *stut);
 int 	type_octal_minus(t_pr *stut);
+int		type_octal_zero(t_pr *stut);
+int type_octal_regular(t_pr *stut);
 
 #endif
