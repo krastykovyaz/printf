@@ -94,7 +94,9 @@ int	main(void)
 	// ft_printf("%010.4o\n", 123);
 	// printf("%010.4o\n", 0);
 	// ft_printf("%010.4o\n", 0);
-	printf("%#7o\n", 33);
-	ft_printf("%#7o\n", 33);
+	// printf("%#7o\n", 33);
+	// ft_printf("%#7o\n", 33);
+	printf("%2X", 94827);
+	ft_printf("%2X", 94827);
 	return (0);
 }

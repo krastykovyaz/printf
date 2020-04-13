@@ -22,6 +22,7 @@ typedef struct s_pr
 	int			size;
 	__int128_t	a;
 	int			len;
+	char		*ptr;
 } t_pr;
 
 int		ft_printf(const char *format, ...);
@@ -54,6 +55,11 @@ int		type_octal_size(va_list ap, t_pr *stut);
 int 	type_priority_octal(t_pr *stut);
 int 	type_octal_minus(t_pr *stut);
 int		type_octal_zero(t_pr *stut);
-int type_octal_regular(t_pr *stut);
+int 	type_octal_regular(t_pr *stut);
+int		type_hex_size(va_list ap, const char *format, t_pr *stut);
+int type_priority_hex(const char *format, t_pr *stut);
+char *convert_hex(const char *format, t_pr *stut, int base);
+int type_hex_minus(const char *format, t_pr *stut);
+int type_hex_regular(const char *format, t_pr *stut);
 
 #endif
