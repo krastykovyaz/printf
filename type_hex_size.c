@@ -6,8 +6,10 @@ int type_priority_hex(const char *format, t_pr *stut)
 
     s = convert_hex(format, stut, 16);
     stut->ptr = s;
+    // printf("%s\n", stut->ptr);
     free(s);
     stut->len = ft_strlen(stut->ptr);
+    //printf("%s\n", stut->ptr);
     if (stut->grid && stut->a)
         stut->width -= 2;
     if (stut->minus)

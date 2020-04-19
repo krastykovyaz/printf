@@ -22,7 +22,6 @@ int hex_pregular_space(t_pr *stut)
             ft_putnchar(' ', i, stut);
         }
     }
-    // printf("f2\n");
     return (i);
 }
 int type_hex_regular(const char *format, t_pr *stut)
@@ -54,5 +53,6 @@ int type_hex_regular(const char *format, t_pr *stut)
         ft_putnchar('0', stut->width - stut->len, stut);
     if (stut->a != 0 || !stut->dot)
         ft_putstr(stut->ptr, stut);
+    //printf("%s\n", stut->ptr);
     return (0);
 }

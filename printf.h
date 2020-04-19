@@ -23,6 +23,8 @@ typedef struct s_pr
 	__int128_t	a;
 	int			len;
 	char		*ptr;
+	long double		fl;
+	long double	fl_save;
 } t_pr;
 
 int		ft_printf(const char *format, ...);
@@ -43,6 +45,7 @@ int 	decimal_pregular_space(t_pr *stut);
 int		type_decimal_regular(t_pr *stut);
 int		ft_strlen(const char *str);
 char		*ft_itoa(long long int n);
+char    *ft_itoa2(long long int n);
 void		ft_putnchar(const char c, int i, t_pr *stut);
 void	ft_putnbr(__int128 n, t_pr *stut);
 __int128_t	convert(t_pr *stut, int base);
@@ -61,5 +64,21 @@ int type_priority_hex(const char *format, t_pr *stut);
 char *convert_hex(const char *format, t_pr *stut, int base);
 int type_hex_minus(const char *format, t_pr *stut);
 int type_hex_regular(const char *format, t_pr *stut);
+int type_float_size(va_list ap,t_pr *stut);
+int type_float_priority(t_pr *stut);
+int float_minus(t_pr *stut);
+void convertf(t_pr *stut);
+int float_zero(t_pr *stut);
+int float_plus(t_pr *stut);
+int float_space(t_pr *stut);
+int regular_float(t_pr *stut);
+int ft_round(__int128_t n);
+__int128_t afterdot(__int128_t n, int i);
+void ft_float(long long nb, __int128_t n, long long i, t_pr *stut);
+void convertf2(t_pr *stut);
+// int power(__int128_t n, int i);
+// int ft_round(__int128_t n);
+// void ft_float(long long nb, __int128_t n, long long i, t_pr *stut);
+
 
 #endif

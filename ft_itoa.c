@@ -37,6 +37,6 @@ char    *ft_itoa(long long int n)
         n /= 10;
         i--;
     }
-    // printf("%s\n", result);
+    //printf("result=%s\n", result);
     return (result);
 }

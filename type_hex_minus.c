@@ -22,7 +22,9 @@ int type_hex_minus(const char *format, t_pr *stut)
     ft_putnchar('0', i, stut);
     if (stut->ptr && stut->a)
     {
+        // printf("a1\n");
         ft_putstr(stut->ptr, stut);
+        // printf("a2\n");
         i = stut->width - i - stut->len;
     }
     else if (stut->ptr && stut->a ==0 && !stut->dot)
