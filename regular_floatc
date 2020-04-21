@@ -1,6 +1,0 @@
-#include "printf.h"
-
-int regular_float(t_pr *stut)
-{
-    
-}
