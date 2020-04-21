@@ -1,35 +1,42 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   float_minus.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/04/21 21:01:16 by aleksandrko       #+#    #+#             */
+/*   Updated: 2020/04/21 21:15:53 by aleksandrko      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "printf.h"
 
-int float_minus(t_pr *stut)
+int		float_minus(t_pr *stut)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if (stut->fl >= 0 && (stut->plus || stut->space))
-    {
-        if (stut->plus)
-            ft_putchar('+', stut);
-        if (stut->space)
-            ft_putchar(' ', stut);
-        i++;
-    }
-    if (stut->fl < 0)
-    {
-        ft_putchar('-', stut);
-        stut->fl = (-stut->fl);
-    }
-    // printf("\n");
-    // printf("%i\n", i);
-    convertf(stut);
-    if (stut->width && stut->width > stut->accuracy)
-    {
-        // printf("len=%i\n", stut->len);
-        i = stut->width - stut->len - i;
-        if (stut->grid && (!stut->dot || (stut->dot && !stut->accuracy)))
-            i--;
-        // printf("%i\n", i);
-        if (i > 0)
-            ft_putnchar(' ', i ,stut);
-    }
-    return (0);
+	i = 0;
+	if (stut->fl >= 0 && (stut->plus || stut->space))
+	{
+		if (stut->plus)
+			ft_putchar('+', stut);
+		if (stut->space)
+			ft_putchar(' ', stut);
+		i++;
+	}
+	if (stut->fl < 0)
+	{
+		ft_putchar('-', stut);
+		stut->fl = (-stut->fl);
+	}
+	convertf(stut);
+	if (stut->width && stut->width > stut->accuracy)
+	{
+		i = (stut->grid && (!stut->dot || (stut->dot && !stut->accuracy))) ? \
+	stut->width - stut->len - i - 1 : stut->width - stut->len - i;
+		if (i > 0)
+			ft_putnchar(' ', i, stut);
+	}
+	return (0);
 }
