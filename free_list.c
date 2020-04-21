@@ -1,8 +1,20 @@
-#include "printf.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   free_list.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/04/21 20:28:54 by ccharmai          #+#    #+#             */
+/*   Updated: 2020/04/21 20:29:06 by ccharmai         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void free_list(t_pr *stut)
+# include "printf.h"
+
+void	free_list(t_pr *stut)
 {
-    stut->zero = 0;
+	stut->zero = 0;
 	stut->plus = 0;
 	stut->minus = 0;
 	stut->space = 0;

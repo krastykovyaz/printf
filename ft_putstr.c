@@ -1,8 +1,20 @@
-#include "printf.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/04/21 20:35:52 by ccharmai          #+#    #+#             */
+/*   Updated: 2020/04/21 20:36:06 by ccharmai         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    ft_putstr(const char *str, t_pr *stut)
+# include "printf.h"
+
+void	ft_putstr(const char *str, t_pr *stut)
 {
-    if (str)
-        write(1, str, ft_strlen(str));
-    stut->nb += ft_strlen(str);
+	if (str)
+		write(1, str, ft_strlen(str));
+	stut->nb += ft_strlen(str);
 }

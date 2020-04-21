@@ -1,14 +1,26 @@
-#include "printf.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/04/21 20:35:27 by ccharmai          #+#    #+#             */
+/*   Updated: 2020/04/21 20:35:49 by ccharmai         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_putnstr(const char *s, int k, t_pr *stut)
+# include "printf.h"
+
+void	ft_putnstr(const char *s, int k, t_pr *stut)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (k)
-    {
-        ft_putchar(s[i], stut);
-        k--;
-        i++; 
-    }
+	i = 0;
+	while (k)
+	{
+		ft_putchar(s[i], stut);
+		k--;
+		i++;
+	}
 }

@@ -1,14 +1,26 @@
-#include "printf.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/04/21 20:33:02 by ccharmai          #+#    #+#             */
+/*   Updated: 2020/04/21 20:33:49 by ccharmai         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+# include "printf.h"
 
 
-int ft_printf(const char *format, ...)
+int	ft_printf(const char *format, ...)
 {
-    t_pr stut;
+	t_pr stut;
 	va_list ap;
 
 	stut.i = 0;
 	stut.nb = 0;
-    va_start(ap, format);
+	va_start(ap, format);
 	while (format[stut.i] != '\0')
 	{
 		free_list(&stut);
