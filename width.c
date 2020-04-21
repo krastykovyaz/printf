@@ -6,6 +6,7 @@ int		width(va_list ap, const char *format, t_pr *stut)
 	if (format[stut->i] == '*')
 	{
 		stut->width = va_arg(ap, int);
+		// printf("%i\n", stut->width);
 		if (stut->width < 0)
 		{
 			stut->minus = '-';

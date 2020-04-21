@@ -17,6 +17,7 @@ int		precision(va_list ap, const char *format, t_pr *stut)
 			while (if_digit(format[stut->i]))
 				stut->i += 1;
 		}
+		// printf("%i\n", stut->accuracy);
 	}
 	size(ap, format, stut);
 	return (0);

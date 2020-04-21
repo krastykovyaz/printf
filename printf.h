@@ -25,6 +25,7 @@ typedef struct s_pr
 	char		*ptr;
 	long double		fl;
 	long double	fl_save;
+	char *s;
 } t_pr;
 
 int		ft_printf(const char *format, ...);
@@ -76,9 +77,7 @@ int ft_round(__int128_t n);
 __int128_t afterdot(__int128_t n, int i);
 void ft_float(long long nb, __int128_t n, long long i, t_pr *stut);
 void convertf2(t_pr *stut);
-// int power(__int128_t n, int i);
-// int ft_round(__int128_t n);
-// void ft_float(long long nb, __int128_t n, long long i, t_pr *stut);
-
+int type_str(va_list ap, const char *format, t_pr *stut);
+void ft_putnstr(const char *s, int k, t_pr *stut);
 
 #endif

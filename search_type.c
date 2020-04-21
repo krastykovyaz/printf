@@ -10,8 +10,11 @@ int search_type(va_list ap, const char *format, t_pr *stut)
         type_hex_size(ap, format, stut);
     else if (format[stut->i] == 'f')
         type_float_size(ap, stut);
+    else if (format[stut->i] == 's' || format[stut->i] == 'c')
+        type_str(ap, format, stut);
     else
         ft_putchar(format[stut->i], stut);
     stut->i += 1;
+    // printf("%i\n", stut->i);
     return (0);
 }
