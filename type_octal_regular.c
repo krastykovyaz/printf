@@ -3,14 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   type_octal_regular.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:36:48 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:37:18 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:59:05 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
+
+int		type_octal_regular_1(t_pr *stut)
+{
+	if (stut->a != 0 || (stut->a == 0 && stut->accuracy > 1))
+		ft_putnbr(stut->a, stut);
+	if (stut->a == 0 && !stut->grid)
+	{
+		if (stut->width >= 0 && stut->accuracy == 0 && stut->dot == 0)
+			ft_putchar('0', stut);
+		else if (stut->width != 0 && stut->dot == 1 && stut->accuracy == 0)
+			ft_putchar(' ', stut);
+	}
+	return (0);
+}
 
 int		type_octal_regular(t_pr *stut)
 {
@@ -37,14 +51,5 @@ int		type_octal_regular(t_pr *stut)
 		ft_putchar('0', stut);
 	if (stut->a < 0)
 		stut->a *= (-1);
-	if (stut->a != 0 || (stut->a == 0 && stut->accuracy > 1))
-		ft_putnbr(stut->a, stut);
-	if (stut->a == 0 && !stut->grid)
-	{
-		if (stut->width >= 0 && stut->accuracy == 0 && stut->dot == 0)
-			ft_putchar('0', stut);
-		else if (stut->width != 0 && stut->dot == 1 && stut->accuracy == 0)
-			ft_putchar(' ', stut);
-	}
-	return (0);
+	return (type_octal_regular_1(stut));
 }

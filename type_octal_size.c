@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_octal_size.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:37:41 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:38:13 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:59:06 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

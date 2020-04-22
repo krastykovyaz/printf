@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   decimal_pregular_space.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:23:59 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 08:53:58 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:57:30 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

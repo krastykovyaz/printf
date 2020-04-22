@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnchar.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:35:07 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 09:05:27 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:10 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

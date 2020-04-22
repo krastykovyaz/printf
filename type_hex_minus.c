@@ -3,20 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   type_hex_minus.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:30:51 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:31:59 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:59 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int		type_hex_minus(const char *format, t_pr *stut)
+void	type_hex_minus_1(const char *format, t_pr *stut)
 {
-	int	i;
-
-	i = 0;
 	if (stut->grid && stut->a)
 	{
 		if (format[stut->i] == 'x')
@@ -24,6 +21,21 @@ int		type_hex_minus(const char *format, t_pr *stut)
 		else
 			ft_putstr("0X", stut);
 	}
+}
+
+int		type_hex_minus_2(int i, t_pr *stut)
+{
+	if (i > 0)
+		ft_putnchar(' ', i, stut);
+	return (0);
+}
+
+int		type_hex_minus(const char *format, t_pr *stut)
+{
+	int	i;
+
+	i = 0;
+	type_hex_minus_1(format, stut);
 	if (stut->accuracy > stut->len)
 	{
 		if (stut->a == 0)
@@ -44,7 +56,5 @@ int		type_hex_minus(const char *format, t_pr *stut)
 	}
 	else
 		i = stut->width - i;
-	if (i > 0)
-		ft_putnchar(' ', i, stut);
-	return (0);
+	return (type_hex_minus_2(i, stut));
 }

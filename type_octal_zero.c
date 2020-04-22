@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   type_octal_zero.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:38:59 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:39:49 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:59:08 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
+
+int		type_octal_zero_1(int i, t_pr *stut)
+{
+	if (i > 0)
+		ft_putnchar('0', i, stut);
+	ft_putnbr(stut->a, stut);
+	return (0);
+}
 
 int		type_octal_zero(t_pr *stut)
 {
@@ -33,19 +41,10 @@ int		type_octal_zero(t_pr *stut)
 	if (stut->grid && (i == 0 || (i + stut->len < stut->width)))
 		ft_putchar('0', stut);
 	if (stut->accuracy > stut->len)
-	{
 		i = stut->accuracy - stut->len;
-	}
 	else
-	{
 		i = 0;
-	}
 	if (stut->grid)
 		i -= 1;
-	if (i > 0)
-	{
-		ft_putnchar('0', i, stut);
-	}
-	ft_putnbr(stut->a, stut);
-	return (0);
+	return (type_octal_zero_1(i, stut));
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_decimal_size.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:16:26 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:21:28 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:49 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,35 +34,40 @@ void	type_decimal_priority(const char *format, t_pr *stut)
 		type_decimal_regular(stut);
 }
 
+void	if_1(va_list ap, const char *format, t_pr *stut)
+{
+	if (format[stut->i] == 'u')
+		stut->a = va_arg(ap, unsigned long int);
+	else
+		stut->a = va_arg(ap, long int);
+}
+
+void	if_2(va_list ap, const char *format, t_pr *stut)
+{
+	if (format[stut->i] == 'u')
+		stut->a = (unsigned char)va_arg(ap, int);
+	else
+		stut->a = (char)va_arg(ap, int);
+}
+
+void	if_3(va_list ap, const char *format, t_pr *stut)
+{
+	if (format[stut->i] == 'u')
+		stut->a = (unsigned short)(va_arg(ap, unsigned int));
+	else
+		stut->a = (short)va_arg(ap, int);
+}
+
 int		type_decimal_size(va_list ap, const char *format, t_pr *stut)
 {
 	if (stut->size == 11)
 		stut->a = va_arg(ap, long long int);
 	else if (stut->size == 1)
-	{
-		if (format[stut->i] == 'u')
-			stut->a = va_arg(ap, unsigned long int);
-		else
-			stut->a = va_arg(ap, long int);
-	}
+		if_1(ap, format, stut);
 	else if (stut->size == 22)
-	{
-		if (format[stut->i] == 'u')
-		{
-			stut->a = (unsigned char)va_arg(ap, int);
-		}
-		else
-			stut->a = (char)va_arg(ap, int);
-	}
+		if_2(ap, format, stut);
 	else if (stut->size == 2)
-	{
-		if (format[stut->i] == 'u')
-		{
-			stut->a = (unsigned short)(va_arg(ap, unsigned int));
-		}
-		else
-			stut->a = (short)va_arg(ap, int);
-	}
+		if_3(ap, format, stut);
 	else
 	{
 		if (format[stut->i] == 'u')

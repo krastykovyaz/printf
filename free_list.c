@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   free_list.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:28:54 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 08:55:30 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:57:48 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

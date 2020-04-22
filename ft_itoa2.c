@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa2.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/21 20:32:56 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 09:02:16 by aleksandrko      ###   ########.fr       */
+/*   Created: 2018/07/21 00:01:45 by ple-thie          #+#    #+#             */
+/*   Updated: 2020/04/22 15:57:58 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

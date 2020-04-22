@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   size.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:10:52 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:11:22 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:37 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

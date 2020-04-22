@@ -3,6 +3,9 @@
         "cstdio": "c",
         "cstdlib": "c",
         "printf.h": "c",
-        "type_strc": "c"
-    }
+        "type_strc": "c",
+        "stdarg.h": "c"
+    },
+    "42header.username": "lnoisome",
+    "42header.email": "lnoisome@student.42.fr"
 }

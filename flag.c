@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   flag.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:24:31 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 08:54:33 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:57:33 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

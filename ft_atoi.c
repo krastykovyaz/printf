@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:29:16 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 08:56:11 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:57:51 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   convert_hex.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:08:58 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 08:16:04 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:57:02 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

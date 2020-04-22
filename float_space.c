@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   float_space.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 21:23:45 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/21 21:24:40 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:57:44 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_decimal_plus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:13:54 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:15:07 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:46 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

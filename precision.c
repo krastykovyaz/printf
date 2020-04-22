@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   precision.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:09:04 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:09:23 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:28 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

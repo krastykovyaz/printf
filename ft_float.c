@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_float.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:30:17 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 08:56:46 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:57:53 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

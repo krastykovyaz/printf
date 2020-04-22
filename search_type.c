@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   search_type.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:09:42 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:10:41 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:32 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

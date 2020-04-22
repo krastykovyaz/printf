@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   percent.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:07:43 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:08:55 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:26 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

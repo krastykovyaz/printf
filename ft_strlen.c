@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:36:52 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 09:06:57 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:18 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

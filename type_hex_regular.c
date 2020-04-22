@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_hex_regular.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:32:34 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:33:36 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:59:00 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

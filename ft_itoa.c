@@ -3,14 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/21 20:31:10 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 08:58:10 by aleksandrko      ###   ########.fr       */
+/*   Created: 2020/04/22 11:40:59 by aleksandrko       #+#    #+#             */
+/*   Updated: 2020/04/22 15:57:56 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
+
+char	*add(long long int n, char *result, int i)
+{
+	if (n == 0)
+	{
+		result[0] = '0';
+		return (result);
+	}
+	if (n < 0)
+	{
+		result[0] = '-';
+		n *= (-1);
+	}
+	while (n > 0)
+	{
+		result[i] = '0' + (n % 10);
+		n /= 10;
+		i--;
+	}
+	return (result);
+}
 
 char	*ft_itoa(long long int n)
 {
@@ -33,21 +54,6 @@ char	*ft_itoa(long long int n)
 	if (!(result = (char*)malloc(sizeof(char) * (unsigned long)(i + 1))))
 		return (NULL);
 	result[i--] = '\0';
-	if (n == 0)
-	{
-		result[0] = '0';
-		return (result);
-	}
-	if (n < 0)
-	{
-		result[0] = '-';
-		n *= (-1);
-	}
-	while (n > 0)
-	{
-		result[i] = '0' + (n % 10);
-		n /= 10;
-		i--;
-	}
+	result = add(n, result, i);
 	return (result);
 }

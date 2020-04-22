@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_float_size.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:29:36 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:30:41 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:57 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

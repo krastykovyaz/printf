@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   convertf.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:16:10 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 08:22:17 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:57:20 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

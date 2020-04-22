@@ -3,32 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   type_decimal_minus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:11:38 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:13:31 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:34 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int		type_decimal_minus(t_pr *stut)
+void	type_decimal_minus_1(t_pr *stut)
 {
-	int i;
-
-	i = 0;
 	if (stut->a < 0)
 		ft_putchar('-', stut);
 	if (stut->a >= 0 && stut->plus)
 		ft_putchar('+', stut);
 	else if (stut->a >= 0 && stut->space)
 		ft_putchar(' ', stut);
+}
+
+int		type_decimal_minus(t_pr *stut)
+{
+	int i;
+
+	i = 0;
+	type_decimal_minus_1(stut);
 	if (stut->accuracy > stut->len)
 	{
 		if (stut->a <= 0)
-		{
 			i = stut->accuracy - stut->len + 1;
-		}
 		else
 			i = stut->accuracy - stut->len;
 	}

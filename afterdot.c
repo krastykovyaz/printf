@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   afterdot.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:08:34 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 08:09:04 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:56:42 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

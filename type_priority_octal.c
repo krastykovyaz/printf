@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_priority_octal.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:39:58 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 09:40:31 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:59:10 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

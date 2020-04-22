@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   type_float_priority.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:51:52 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/21 21:00:08 by aleksandrko      ###   ########.fr       */
+/*   Updated: 2020/04/22 15:58:54 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
