@@ -3,20 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:33:02 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:33:49 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 09:03:41 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
-
+#include "printf.h"
 
 int	ft_printf(const char *format, ...)
 {
-	t_pr stut;
-	va_list ap;
+	t_pr	stut;
+	va_list	ap;
 
 	stut.i = 0;
 	stut.nb = 0;
@@ -29,7 +28,7 @@ int	ft_printf(const char *format, ...)
 			if (format[stut.i] == '%')
 				break ;
 			ft_putchar(format[stut.i], &stut);
-				stut.i++;
+			stut.i++;
 		}
 		if (format[stut.i] == '%')
 			percent(ap, format, &stut);

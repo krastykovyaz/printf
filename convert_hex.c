@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   convert_hex.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:08:58 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:11:56 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 08:16:04 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
+#include "printf.h"
 
 char	*convert_hex(const char *format, t_pr *stut, int base)
 {
-	char *s;
-	long int n;
-	int i;
+	char		*s;
+	long int	n;
+	int			i;
 
 	i = 1;
 	n = stut->a;
@@ -26,27 +26,16 @@ char	*convert_hex(const char *format, t_pr *stut, int base)
 		return (NULL);
 	s[i] = '\0';
 	n = stut->a;
-	if (format[stut->i] == 'x')
+	while (i--)
 	{
-		while (i--)
+		if (n % base < 10)
+			s[i] = n % base + '0';
+		else
 		{
-			if (n % base < 10)
-				s[i] = n % base + '0';
-			else
-				s[i] = n % base + 'a' - 10;
-			n /= base;
+			s[i] = (format[stut->i] == 'x') ? n % base + 'a' - 10 : \
+	n % base + 'A' - 10;
 		}
-	}
-	else
-	{
-		while (i--)
-		{
-			if (n % base < 10)
-				s[i] = n % base + '0';
-			else
-				s[i] = n % base + 'A' - 10;
-			n /= base;
-		}
+		n /= base;
 	}
 	return (s);
 }

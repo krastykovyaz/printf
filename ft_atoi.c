@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:29:16 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:30:12 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 08:56:11 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
+#include "printf.h"
 
 int	ft_atoi(const char *str)
 {
-	short int       sign;
-	unsigned   long result;
+	short int		sign;
+	unsigned long	result;
 
 	sign = 1;
 	result = 0;

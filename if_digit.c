@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   if_digit.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:39:47 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:39:58 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 09:07:16 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
+#include "printf.h"
 
 int	if_digit(int c)
 {

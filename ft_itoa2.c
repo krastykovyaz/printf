@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa2.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:32:56 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:32:57 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 09:02:16 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-char    *ft_itoa2(long long int n)
+char	*ft_itoa2(long long int n)
 {
-	char            *result;
-	int             i;
-	long long int   power;
-	short sign;
+	char			*result;
+	int				i;
+	long long int	power;
+	short			sign;
 
 	sign = (n < 0) ? 2 : 1;
 	i = 1;
@@ -31,7 +31,7 @@ char    *ft_itoa2(long long int n)
 		result[i++] = '-';
 	while (power)
 	{
-		result[i++] =  n / power * sign + '0';
+		result[i++] = n / power * sign + '0';
 		n %= power;
 		power /= 10;
 	}

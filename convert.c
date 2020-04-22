@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   convert.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:14:51 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:15:01 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 08:17:36 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
+#include "printf.h"
 
 __int128_t	convert(t_pr *stut, int base)
 {

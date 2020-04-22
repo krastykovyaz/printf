@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_float.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:30:17 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:30:53 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 08:56:46 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include  "printf.h"
+#include "printf.h"
 
 void	ft_float(long long nb, __int128_t n, long long i, t_pr *stut)
 {
 	char	*s;
 
+	ft_putnbr(nb, stut);
 	if (!stut->dot || (stut->dot && stut->accuracy))
 	{
 		ft_putchar('.', stut);

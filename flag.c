@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   flag.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:24:31 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:25:08 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 08:54:33 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
+#include "printf.h"
 
 int		flag(va_list ap, const char *format, t_pr *stut)
 {
@@ -31,5 +31,5 @@ int		flag(va_list ap, const char *format, t_pr *stut)
 	}
 	if (format[stut->i] != '\0')
 		width(ap, format, stut);
-	return 0;
+	return (0);
 }

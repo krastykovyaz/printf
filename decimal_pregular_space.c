@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   decimal_pregular_space.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:23:59 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:24:10 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 08:53:58 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
+#include "printf.h"
 
 int		decimal_pregular_space(t_pr *stut)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (stut->width > stut->len)

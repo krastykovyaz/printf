@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   afterdot.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:08:34 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:14:12 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 08:09:04 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
+#include "printf.h"
 
-__int128_t  afterdot(__int128_t n, int i)
+__int128_t		afterdot(__int128_t n, int i)
 {
-	__int128_t nb;
+	__int128_t	nb;
 
 	nb = 1;
 	while (i--)
 	{
 		nb *= n;
 	}
-	return(nb);
+	return (nb);
 }

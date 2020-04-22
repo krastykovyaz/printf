@@ -1,12 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   width.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/04/22 09:40:51 by aleksandrko       #+#    #+#             */
+/*   Updated: 2020/04/22 09:41:07 by aleksandrko      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "printf.h"
 
 int		width(va_list ap, const char *format, t_pr *stut)
 {
-	// printf("%c\n", format[stut->i]);
 	if (format[stut->i] == '*')
 	{
 		stut->width = va_arg(ap, int);
-		// printf("%i\n", stut->width);
 		if (stut->width < 0)
 		{
 			stut->minus = '-';

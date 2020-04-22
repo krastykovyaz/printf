@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnchar.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:35:07 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:35:25 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 09:05:27 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
+#include "printf.h"
 
 void	ft_putnchar(char c, int n, t_pr *ssl)
 {

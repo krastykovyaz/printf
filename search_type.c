@@ -1,20 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   search_type.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/04/22 09:09:42 by aleksandrko       #+#    #+#             */
+/*   Updated: 2020/04/22 09:10:41 by aleksandrko      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "printf.h"
 
-int search_type(va_list ap, const char *format, t_pr *stut)
+int		search_type(va_list ap, const char *format, t_pr *stut)
 {
-    if (format[stut->i] == 'd' || format[stut->i] == 'i' || format[stut->i] == 'u')
-        type_decimal_size(ap, format, stut);
-    else if (format[stut->i] == 'o')
-        type_octal_size(ap, stut);
-    else if (format[stut->i] == 'x' || format[stut->i] == 'X')
-        type_hex_size(ap, format, stut);
-    else if (format[stut->i] == 'f')
-        type_float_size(ap, stut);
-    else if (format[stut->i] == 's' || format[stut->i] == 'c')
-        type_str(ap, format, stut);
-    else
-        ft_putchar(format[stut->i], stut);
-    stut->i += 1;
-    // printf("%i\n", stut->i);
-    return (0);
+	if (format[stut->i] == 'd' || format[stut->i] == 'i' || \
+	format[stut->i] == 'u')
+		type_decimal_size(ap, format, stut);
+	else if (format[stut->i] == 'o')
+		type_octal_size(ap, stut);
+	else if (format[stut->i] == 'x' || format[stut->i] == 'X')
+		type_hex_size(ap, format, stut);
+	else if (format[stut->i] == 'f')
+		type_float_size(ap, stut);
+	else if (format[stut->i] == 's' || format[stut->i] == 'c')
+		type_str(ap, format, stut);
+	else
+		ft_putchar(format[stut->i], stut);
+	stut->i += 1;
+	return (0);
 }

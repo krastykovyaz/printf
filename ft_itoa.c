@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: aleksandrkovazin <aleksandrkovazin@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:31:10 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/21 20:32:12 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/04/22 08:58:10 by aleksandrko      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "printf.h"
+#include "printf.h"
 
 char	*ft_itoa(long long int n)
 {
-	char            *result;
-	int             i;
-	long long int   nb;
+	char			*result;
+	int				i;
+	long long int	nb;
 
 	i = 0;
 	nb = n;
@@ -36,7 +36,7 @@ char	*ft_itoa(long long int n)
 	if (n == 0)
 	{
 		result[0] = '0';
-		return(result);
+		return (result);
 	}
 	if (n < 0)
 	{
