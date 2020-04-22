@@ -1,0 +1,146 @@
+==47582== Memcheck, a memory error detector
+==47582== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==47582== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==47582== Command: ./libftprintf.a
+==47582== Parent PID: 33060
+==47582== 
+==47582== 
+==47582== HEAP SUMMARY:
+==47582==     in use at exit: 135,006 bytes in 509 blocks
+==47582==   total heap usage: 555 allocs, 46 frees, 149,936 bytes allocated
+==47582== 
+==47582== 5 bytes in 1 blocks are definitely lost in loss record 30 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x100398938: strdup (in /usr/lib/system/libsystem_c.dylib)
+==47582==    by 0x100051966: ??? (in /bin/sh)
+==47582==    by 0x100001707: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== 16 bytes in 1 blocks are definitely lost in loss record 96 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10004DACC: ??? (in /bin/sh)
+==47582==    by 0x10002D0F1: ??? (in /bin/sh)
+==47582==    by 0x100002BB9: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== 28 bytes in 1 blocks are definitely lost in loss record 108 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10004DACC: ??? (in /bin/sh)
+==47582==    by 0x1000021DC: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== 39 bytes in 1 blocks are definitely lost in loss record 171 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10004DACC: ??? (in /bin/sh)
+==47582==    by 0x10000F23A: ??? (in /bin/sh)
+==47582==    by 0x100049F95: ??? (in /bin/sh)
+==47582==    by 0x100049394: ??? (in /bin/sh)
+==47582==    by 0x100002227: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== 72 bytes in 3 blocks are possibly lost in loss record 217 of 257
+==47582==    at 0x100133C8A: calloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10068F846: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==47582==    by 0x1006A2FE8: objc_object::sidetable_retainCount() (in /usr/lib/libobjc.A.dylib)
+==47582==    by 0x1000A203B: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==47582==    by 0x1000A2255: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==47582==    by 0x1002DD00A: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x10068F074: _objc_init (in /usr/lib/libobjc.A.dylib)
+==47582==    by 0x10027068D: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==47582==    by 0x10027063A: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+==47582==    by 0x1001849D5: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==47582==    by 0x1000B2A1A: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==47582==    by 0x1000B2C1D: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==47582== 
+==47582== 96 (32 direct, 64 indirect) bytes in 1 blocks are definitely lost in loss record 218 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10004DACC: ??? (in /bin/sh)
+==47582==    by 0x10002B400: ??? (in /bin/sh)
+==47582==    by 0x10002C525: ??? (in /bin/sh)
+==47582==    by 0x10001D73E: ??? (in /bin/sh)
+==47582==    by 0x10001D658: ??? (in /bin/sh)
+==47582==    by 0x10001D48C: ??? (in /bin/sh)
+==47582==    by 0x100002C81: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== 480 bytes in 1 blocks are definitely lost in loss record 233 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10004DACC: ??? (in /bin/sh)
+==47582==    by 0x10002A9B9: ??? (in /bin/sh)
+==47582==    by 0x100001FB1: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== 480 bytes in 1 blocks are definitely lost in loss record 234 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10004DACC: ??? (in /bin/sh)
+==47582==    by 0x10002A9D5: ??? (in /bin/sh)
+==47582==    by 0x100001FB1: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== 528 (16 direct, 512 indirect) bytes in 1 blocks are definitely lost in loss record 240 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10004DACC: ??? (in /bin/sh)
+==47582==    by 0x100024A11: ??? (in /bin/sh)
+==47582==    by 0x100049DC3: ??? (in /bin/sh)
+==47582==    by 0x100049E33: ??? (in /bin/sh)
+==47582==    by 0x1000020C3: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== 528 (16 direct, 512 indirect) bytes in 1 blocks are definitely lost in loss record 241 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10004DACC: ??? (in /bin/sh)
+==47582==    by 0x100024A11: ??? (in /bin/sh)
+==47582==    by 0x100049DDB: ??? (in /bin/sh)
+==47582==    by 0x100049E33: ??? (in /bin/sh)
+==47582==    by 0x1000020C3: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== 8,062 (40 direct, 8,022 indirect) bytes in 1 blocks are definitely lost in loss record 255 of 257
+==47582==    at 0x100133626: malloc (in /usr/local/Cellar/valgrind/3.15.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==47582==    by 0x10004DACC: ??? (in /bin/sh)
+==47582==    by 0x100049D6B: ??? (in /bin/sh)
+==47582==    by 0x100049E33: ??? (in /bin/sh)
+==47582==    by 0x1000020C3: ??? (in /bin/sh)
+==47582==    by 0x1002DF234: start (in /usr/lib/system/libdyld.dylib)
+==47582==    by 0x1: ???
+==47582==    by 0x104927B36: ???
+==47582==    by 0x104927B3E: ???
+==47582== 
+==47582== LEAK SUMMARY:
+==47582==    definitely lost: 1,152 bytes in 10 blocks
+==47582==    indirectly lost: 9,110 bytes in 288 blocks
+==47582==      possibly lost: 72 bytes in 3 blocks
+==47582==    still reachable: 106,775 bytes in 59 blocks
+==47582==         suppressed: 17,897 bytes in 149 blocks
+==47582== Reachable blocks (those to which a pointer was found) are not shown.
+==47582== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==47582== 
+==47582== For lists of detected and suppressed errors, rerun with: -s
+==47582== ERROR SUMMARY: 11 errors from 11 contexts (suppressed: 11 from 11)
