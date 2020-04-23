@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 11:40:59 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:57:56 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 09:59:25 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char	*ft_itoa(long long int n)
 		nb = nb / 10;
 		i++;
 	}
-	if (!(result = (char*)malloc(sizeof(char) * (unsigned long)(i + 1))))
+	if (!(result = (char*)malloc(sizeof(char) * (unsigned long)(i))))
 		return (NULL);
 	result[i--] = '\0';
 	result = add(n, result, i);
