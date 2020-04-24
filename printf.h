@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 14:50:10 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/23 08:48:29 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/24 09:23:46 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,7 @@ void			ft_float(long long nb, __int128_t n, long long i, t_pr *stut);
 void			convertf2(t_pr *stut);
 int				type_str(va_list ap, const char *format, t_pr *stut);
 void			ft_putnstr(const char *s, int k, t_pr *stut);
+int				type_address(const char *format, void *b, t_pr *stut);
+int				type_perc(t_pr *stut);
 
 #endif

@@ -6,18 +6,21 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:35:07 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 15:58:10 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/24 09:19:16 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void	ft_putnchar(char c, int n, t_pr *ssl)
+void ft_putnchar(char c, int n, t_pr *ssl)
 {
-	ssl->nb += n;
-	while (n != 0)
-	{
-		write(1, &c, 1);
-		n--;
-	}
+    ssl->nb += n;
+    if (n > 0)
+    {
+        while (n != 0)
+        {
+            write(1, &c, 1);
+            n--;
+        }
+    }
 }
