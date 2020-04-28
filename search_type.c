@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:09:42 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/24 09:22:52 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/25 21:32:09 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 int		search_type(va_list ap, const char *format, t_pr *stut)
 {
@@ -26,9 +26,9 @@ int		search_type(va_list ap, const char *format, t_pr *stut)
 	else if (format[stut->i] == 's' || format[stut->i] == 'c')
 		type_str(ap, format, stut);
 	else if (format[stut->i] == 'p')
-        type_address(format, va_arg(ap, void*), stut);
-    else if (format[stut->i] == '%')
-        type_perc(stut);
+		type_address(format, va_arg(ap, void*), stut);
+	else if (format[stut->i] == '%')
+		type_perc(stut);
 	else
 		ft_putchar(format[stut->i], stut);
 	stut->i += 1;

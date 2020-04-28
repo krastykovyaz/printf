@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 21:23:45 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:57:44 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:38:34 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 int		float_space(t_pr *stut)
 {

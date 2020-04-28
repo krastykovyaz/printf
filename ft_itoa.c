@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 11:40:59 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/23 09:59:25 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:38:51 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 char	*add(long long int n, char *result, int i)
 {
@@ -52,7 +52,7 @@ char	*ft_itoa(long long int n)
 		i++;
 	}
 	if (!(result = (char*)malloc(sizeof(char) * (unsigned long)(i))))
-		return (NULL);
+		raise_memory_error();
 	result[i--] = '\0';
 	result = add(n, result, i);
 	return (result);

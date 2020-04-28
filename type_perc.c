@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/23 21:54:21 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/04/24 10:19:50 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/24 10:33:48 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 void		pr(char c, t_pr *stut)
 {

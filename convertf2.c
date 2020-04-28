@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 21:18:26 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/04/23 11:39:00 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/24 20:41:09 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 void		printafterdot(__int128_t f1, int i, int k, t_pr *stut)
 {
@@ -41,7 +41,7 @@ __int128_t	checknext(int i, int k, __int128_t f1, t_pr *stut)
 		if (f1 == 0)
 			f1++;
 		else if (i == 19 && k != 18)
-			f1 = f1;
+			;
 		else
 			f1++;
 	}
@@ -53,9 +53,10 @@ void		convertf2(t_pr *stut)
 	long long int	nb;
 	__int128_t		f1;
 	int				i;
-	char			*s;
 	int				k;
 
+	k = 0;
+	f1 = 0;
 	i = (!stut->accuracy) ? 6 : stut->accuracy;
 	nb = stut->fl;
 	if (stut->fl < 0 && nb == 0)
@@ -63,9 +64,6 @@ void		convertf2(t_pr *stut)
 	stut->fl = stut->fl - nb;
 	if (stut->fl < 0)
 		stut->fl = -(stut->fl);
-	s = ft_itoa2(f1);
-	k = ft_strlen(s);
-	free(s);
 	f1 = checknext(i, k, f1, stut);
 	if ((ft_round(f1) != 9 && (int)(stut->fl * 10) == 9) || \
 	((stut->dot && !stut->accuracy && ft_round(f1) > 4)))

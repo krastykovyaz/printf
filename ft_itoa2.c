@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/21 00:01:45 by ple-thie          #+#    #+#             */
-/*   Updated: 2020/04/22 15:57:58 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:38:56 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 char	*ft_itoa2(long long int n)
 {
@@ -25,7 +25,7 @@ char	*ft_itoa2(long long int n)
 	while ((n / power / 10) != 0 && ++i)
 		power *= 10;
 	if (!(result = malloc(sizeof(char) * (unsigned long)(i + sign))))
-		return (NULL);
+		raise_memory_error();
 	i = 0;
 	if (sign == 2)
 		result[i++] = '-';

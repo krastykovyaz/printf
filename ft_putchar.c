@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:34:41 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 15:58:03 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 19:04:47 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 void	ft_putchar(char c, t_pr *stut)
 {

@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:27:37 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 16:01:29 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/24 20:07:56 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 void	decimal_pzero_1(int i, t_pr *stut)
 {
@@ -51,6 +51,7 @@ int		type_decimal_zero(t_pr *stut)
 	int	i;
 	int	m;
 
+	i = 0;
 	m = 0;
 	decimal_pzero(stut);
 	if (stut->width > stut->len && i >= 0 && stut->a < 0 && !stut->accuracy)

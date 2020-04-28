@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/23 21:54:28 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/04/24 09:48:31 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/24 10:33:47 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 char		*ft_strjoin(const char *s1, const char *s2)
 {

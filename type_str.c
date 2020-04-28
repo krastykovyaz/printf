@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:04:43 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:59:11 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:40:52 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 void	minusifelse(int i, t_pr *stut)
 {

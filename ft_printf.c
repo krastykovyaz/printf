@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:33:02 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 15:58:01 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 20:08:46 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 int	ft_printf(const char *format, ...)
 {
@@ -25,6 +25,8 @@ int	ft_printf(const char *format, ...)
 		free_list(&stut);
 		while (format[stut.i] != '%' && format[stut.i] != '\0')
 		{
+			if (format[stut.i] == '{')
+				parse_colors_flags(format, &stut);
 			if (format[stut.i] == '%')
 				break ;
 			ft_putchar(format[stut.i], &stut);

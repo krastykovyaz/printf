@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   printf.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 14:50:10 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/24 09:23:46 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/24 14:03:10 by ccharmai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,15 @@
 # include <unistd.h>
 # include <stdarg.h>
 # include <stdlib.h>
+
+# define COLOR_NORMAL	"\x1B[0m"
+# define COLOR_RED		"\x1B[31m"
+# define COLOR_GREEN	"\x1B[32m"
+# define COLOR_YELLOW	"\x1B[33m"
+# define COLOR_BLUE		"\x1B[34m"
+# define COLOR_MAGENTE	"\x1B[35m"
+# define COLOR_CYAN		"\x1B[36m"
+# define COLOR_WHITE	"\x1B[37m"
 
 typedef	struct	s_pr
 {
@@ -60,6 +69,7 @@ char			*ft_itoa(long long int n);
 char			*ft_itoa2(long long int n);
 void			ft_putnchar(const char c, int i, t_pr *stut);
 void			ft_putnbr(__int128 n, t_pr *stut);
+void			ft_putstring(char *line);
 __int128_t		convert(t_pr *stut, int base);
 int				type_decimal_minus(t_pr *stut);
 int				type_decimal_plus(const char *format, t_pr *stut);
@@ -90,7 +100,15 @@ void			ft_float(long long nb, __int128_t n, long long i, t_pr *stut);
 void			convertf2(t_pr *stut);
 int				type_str(va_list ap, const char *format, t_pr *stut);
 void			ft_putnstr(const char *s, int k, t_pr *stut);
-int				type_address(const char *format, void *b, t_pr *stut);
+void			raise_flag_error(char flag);
+void			raise_memory_error();
+void			raise_error(char *message);
+void			parse_colors_flags(const char *format, t_pr *stut);
+void			append_symb(char **line, char symb);
+int				ft_equal(char *one, char *two);
+int				type_address(const char *format, void *p, t_pr *stut);
 int				type_perc(t_pr *stut);
+char			*ft_strdup(char *line);
+void			empty_line(char **line);
 
 #endif

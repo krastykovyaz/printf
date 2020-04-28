@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:34:03 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:59:02 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:40:31 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 int		type_priority_hex(const char *format, t_pr *stut)
 {

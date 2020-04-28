@@ -6,7 +6,7 @@
 #    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/22 15:58:40 by lnoisome          #+#    #+#              #
-#    Updated: 2020/04/24 09:30:30 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/04/25 22:20:58 by lnoisome         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,12 @@ SRC =	afterdot.c \
 		type_str.c \
 		width.c \
 		type_address.c \
-		type_perc.c 
+		type_perc.c \
+		errors.c \
+		ft_equal.c \
+		colors.c \
+		append.c \
+		ft_strdup.c 
 
 OBJ =	afterdot.o \
 		convert.o \
@@ -110,14 +115,19 @@ OBJ =	afterdot.o \
 		type_str.o \
 		width.o \
 		type_address.o \
-		type_perc.o 
+		type_perc.o \
+		errors.o \
+		ft_equal.o \
+		colors.o \
+		append.o \
+		ft_strdup.o 
 
-HEADER = printf.h
+HEADER = includes/
 
 all: $(NAME)
 
 $(NAME):
-	@gcc -c $(SRC) -I $(HEADER)
+	@gcc -c -Wall -Wextra -Werror $(SRC) -I $(HEADER)
 	@ar -rc $(NAME) $(OBJ)
 
 clean:

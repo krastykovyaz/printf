@@ -6,13 +6,13 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:21:58 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:58:51 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/24 20:09:06 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
-void	decimal_space_if_1(const char *format, int y, t_pr *stut)
+void	decimal_space_if_1(int y, t_pr *stut)
 {
 	if (stut->accuracy && stut->accuracy > stut->len)
 		ft_putnchar(' ', stut->width - stut->accuracy + 1, stut);
@@ -46,7 +46,7 @@ void	decimal_space_if(const char *format, int y, t_pr *stut)
 		ft_putchar(' ', stut);
 	stut->width -= 1;
 	if (stut->width >= stut->accuracy)
-		decimal_space_if_1(format, y, stut);
+		decimal_space_if_1(y, stut);
 }
 
 void	decimal_space_else(t_pr *stut)
@@ -96,8 +96,6 @@ int		type_decimal_space(const char *format, t_pr *stut)
 		y = stut->accuracy;
 	if (stut->a <= 0)
 		y = y + 1;
-	else
-		y = y;
 	if (stut->a >= 0)
 		decimal_space_if(format, y, stut);
 	else

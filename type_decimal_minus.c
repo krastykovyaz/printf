@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:11:38 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:58:34 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:39:49 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 void	type_decimal_minus_1(t_pr *stut)
 {

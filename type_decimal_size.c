@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:16:26 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:58:49 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/25 21:16:29 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 void	type_decimal_priority(const char *format, t_pr *stut)
 {

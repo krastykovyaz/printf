@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnchar.c                                      :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/21 20:35:07 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/24 12:57:58 by ccharmai         ###   ########.fr       */
+/*   Created: 2020/04/23 19:26:38 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/04/24 14:02:53 by ccharmai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/printf.h"
 
-void	ft_putnchar(char c, int n, t_pr *ssl)
+char	*ft_strdup(char *line)
 {
-	ssl->nb += n;
-	if (n > 0)
+	char	*out;
+	int		i;
+
+	if (!(out = (char *)malloc(sizeof(char) * (ft_strlen(line)))))
+		raise_memory_error();
+	i = 0;
+	while (line[i] != '\0')
 	{
-		while (n != 0)
-		{
-			write(1, &c, 1);
-			n--;
-		}
+		out[i] = line[i];
+		i++;
 	}
+	return (out);
+}
+
+void	empty_line(char **line)
+{
+	char *out;
+
+	out = (char *)malloc(sizeof(char) * 1);
+	out[0] = '\0';
+	free(*line);
+	*line = out;
 }

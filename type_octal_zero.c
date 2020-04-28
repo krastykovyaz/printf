@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:38:59 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:59:08 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:40:45 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 int		type_octal_zero_1(int i, t_pr *stut)
 {

@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:36:48 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:59:05 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:40:38 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 int		type_octal_regular_1(t_pr *stut)
 {

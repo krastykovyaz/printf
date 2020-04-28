@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnstr.c                                       :+:      :+:    :+:   */
+/*   append.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/21 20:35:27 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/23 18:39:15 by lnoisome         ###   ########.fr       */
+/*   Created: 2020/04/23 19:14:34 by lnoisome          #+#    #+#             */
+/*   Updated: 2020/04/24 13:52:50 by ccharmai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/printf.h"
 
-void	ft_putnstr(const char *s, int k, t_pr *stut)
+void	append_symb(char **line, char symb)
 {
-	int i;
+	char	*out;
+	int		i;
+	int		len;
 
+	len = ft_strlen(*line);
+	if (!(out = (char*)malloc(sizeof(char) * (len + 2))))
+		raise_memory_error();
 	i = 0;
-	while (k)
+	while (i < len)
 	{
-		ft_putchar(s[i], stut);
-		k--;
+		out[i] = (*line)[i];
 		i++;
 	}
+	out[i] = symb;
+	out[i + 1] = '\0';
+	free(*line);
+	*line = out;
 }

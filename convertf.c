@@ -6,22 +6,29 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:16:10 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 15:57:20 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/24 20:50:19 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
-void	convertf(t_pr *stut)
+long double	sign(t_pr *stut)
+{
+	if (stut->fl < 0)
+		stut->fl *= (-1);
+	return (stut->fl);
+}
+
+void		convertf(t_pr *stut)
 {
 	long long int	i;
 	long long int	nb;
 	__int128_t		f1;
 	__int128_t		f2;
 
+	nb = 0;
 	i = (!stut->accuracy) ? 6 : stut->accuracy;
-	if (stut->fl < 0)
-		stut->fl *= (-1);
+	stut->fl = sign(stut);
 	if (stut->fl < 0 && nb == 0)
 		ft_putchar('-', stut);
 	nb = stut->fl;

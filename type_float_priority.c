@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:51:52 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:58:54 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:40:13 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 int		type_float_priority(t_pr *stut)
 {

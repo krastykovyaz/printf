@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/21 20:23:59 by ccharmai          #+#    #+#             */
-/*   Updated: 2020/04/22 15:57:30 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:38:06 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 int		decimal_pregular_space(t_pr *stut)
 {

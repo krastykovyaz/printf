@@ -6,11 +6,11 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:29:36 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/22 15:58:57 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/04/23 18:40:17 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "includes/printf.h"
 
 int		len_a_dot(t_pr *stut)
 {
