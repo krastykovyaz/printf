@@ -6,7 +6,7 @@
 #    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/22 15:58:40 by lnoisome          #+#    #+#              #
-#    Updated: 2020/04/25 22:20:58 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/05/19 09:36:00 by lnoisome         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,11 @@ SRC =	afterdot.c \
 		ft_equal.c \
 		colors.c \
 		append.c \
-		ft_strdup.c 
+		ft_strdup.c \
+		uns.c \
+		uns2.c \
+		uns3.c \
+		uns4.c
 
 OBJ =	afterdot.o \
 		convert.o \
@@ -120,14 +124,18 @@ OBJ =	afterdot.o \
 		ft_equal.o \
 		colors.o \
 		append.o \
-		ft_strdup.o 
+		ft_strdup.o \
+		uns.o \
+		uns2.o \
+		uns3.o \
+		uns4.o
 
 HEADER = includes/
 
 all: $(NAME)
 
 $(NAME):
-	@gcc -c -Wall -Wextra -Werror $(SRC) -I $(HEADER)
+	@gcc -c  $(SRC) -I $(HEADER)
 	@ar -rc $(NAME) $(OBJ)
 
 clean:

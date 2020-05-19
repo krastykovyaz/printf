@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   printf.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccharmai <5429549@mail.ru>                 +#+  +:+       +#+        */
+/*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 14:50:10 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/24 14:03:10 by ccharmai         ###   ########.fr       */
+/*   Updated: 2020/05/19 09:31:53 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,88 +27,113 @@
 # define COLOR_CYAN		"\x1B[36m"
 # define COLOR_WHITE	"\x1B[37m"
 
-typedef	struct	s_pr
+typedef	struct				s_pr
 {
-	int			nb;
-	int			i;
-	char		plus;
-	char		minus;
-	char		space;
-	char		grid;
-	int			zero;
-	int			width;
-	int			accuracy;
-	int			dot;
-	int			size;
-	__int128_t	a;
-	int			len;
-	char		*ptr;
-	long double	fl;
-	long double	fl_save;
-	char		*s;
-}				t_pr;
+	int						nb;
+	int						i;
+	char					plus;
+	char					minus;
+	char					space;
+	char					grid;
+	int						zero;
+	int						width;
+	int						accuracy;
+	int						dot;
+	int						size;
+	__int128_t				a;
+	unsigned long long int	u;
+	int						len;
+	char					*ptr;
+	long double				fl;
+	long double				fl_save;
+	char					*s;
+}							t_pr;
 
-int				ft_printf(const char *format, ...);
-void			free_list(t_pr *stut);
-int				percent(va_list arg, const char *format, t_pr *stut);
-void			ft_putchar(const char c, t_pr *stut);
-int				flag(va_list arg, const char *format, t_pr *stut);
-int				width(va_list arg, const char *format, t_pr *stut);
-int				ft_atoi(const char *str);
-int				if_digit(int c);
-int				precision(va_list ap, const char *format, t_pr *stut);
-int				size(va_list ap, const char *format, t_pr *stut);
-int				search_type(va_list ap, const char *format, t_pr *stut);
-int				type_decimal_size(va_list ap, const char *format, t_pr *stut);
-void			ft_putstr(const char *str, t_pr *stut);
-void			type_decimal_priority(const char *format, t_pr *stut);
-int				decimal_pregular_space(t_pr *stut);
-int				type_decimal_regular(t_pr *stut);
-int				ft_strlen(const char *str);
-char			*ft_itoa(long long int n);
-char			*ft_itoa2(long long int n);
-void			ft_putnchar(const char c, int i, t_pr *stut);
-void			ft_putnbr(__int128 n, t_pr *stut);
-void			ft_putstring(char *line);
-__int128_t		convert(t_pr *stut, int base);
-int				type_decimal_minus(t_pr *stut);
-int				type_decimal_plus(const char *format, t_pr *stut);
-int				type_decimal_zero(t_pr *stut);
-int				type_decimal_space(const char *format, t_pr *stut);
-void			decimal_pregular_zero(int i, t_pr *stut);
-int				type_octal_size(va_list ap, t_pr *stut);
-int				type_priority_octal(t_pr *stut);
-int				type_octal_minus(t_pr *stut);
-int				type_octal_zero(t_pr *stut);
-int				type_octal_regular(t_pr *stut);
-int				type_hex_size(va_list ap, const char *format, t_pr *stut);
-int				type_priority_hex(const char *format, t_pr *stut);
-char			*convert_hex(const char *format, t_pr *stut, int base);
-int				type_hex_minus(const char *format, t_pr *stut);
-int				type_hex_regular(const char *format, t_pr *stut);
-int				type_float_size(va_list ap, t_pr *stut);
-int				type_float_priority(t_pr *stut);
-int				float_minus(t_pr *stut);
-void			convertf(t_pr *stut);
-int				float_zero(t_pr *stut);
-int				float_plus(t_pr *stut);
-int				float_space(t_pr *stut);
-int				regular_float(t_pr *stut);
-int				ft_round(__int128_t n);
-__int128_t		afterdot(__int128_t n, int i);
-void			ft_float(long long nb, __int128_t n, long long i, t_pr *stut);
-void			convertf2(t_pr *stut);
-int				type_str(va_list ap, const char *format, t_pr *stut);
-void			ft_putnstr(const char *s, int k, t_pr *stut);
-void			raise_flag_error(char flag);
-void			raise_memory_error();
-void			raise_error(char *message);
-void			parse_colors_flags(const char *format, t_pr *stut);
-void			append_symb(char **line, char symb);
-int				ft_equal(char *one, char *two);
-int				type_address(const char *format, void *p, t_pr *stut);
-int				type_perc(t_pr *stut);
-char			*ft_strdup(char *line);
-void			empty_line(char **line);
+int							type_uns_space_u(const char *format, t_pr *stut);
+int							type_uns_space_1(int i, int y, t_pr *stut);
+void						uns_space(const char *format, int y, t_pr *stut);
+void						uns_space_if_1(int y, t_pr *stut);
+int							type_uns_zero_u(t_pr *stut);
+int							uns_pzero(t_pr *stut);
+int							uns_space_p(t_pr *stut);
+int							type_uns_minus_u(t_pr *stut);
+unsigned long long			convert_u(t_pr *stut, int base);
+void						ft_putnbr_u(unsigned long long int n, t_pr *stut);
+char						*ft_itoa_u(unsigned long long nb);
+void						type_uns_priority(const char *format, t_pr *stut);
+int							type_uns_size(va_list ap, const char *format, \
+	t_pr *stut);
+int							ft_printf(const char *format, ...);
+void						free_list(t_pr *stut);
+int							percent(va_list arg, const char *format, \
+	t_pr *stut);
+void						ft_putchar(const char c, t_pr *stut);
+int							flag(va_list arg, const char *format, t_pr *stut);
+int							width(va_list arg, const char *format, t_pr *stut);
+int							ft_atoi(const char *str);
+int							if_digit(int c);
+int							precision(va_list ap, const char *format, \
+	t_pr *stut);
+int							size(va_list ap, const char *format, t_pr *stut);
+int							search_type(va_list ap, const char *format, \
+	t_pr *stut);
+int							type_decimal_size(va_list ap, const char *format, \
+	t_pr *stut);
+void						ft_putstr(const char *str, t_pr *stut);
+void						type_decimal_priority(const char *format, \
+	t_pr *stut);
+int							decimal_pregular_space(t_pr *stut);
+int							type_decimal_regular(t_pr *stut);
+int							ft_strlen(const char *str);
+char						*ft_itoa(__int128_t nb);
+char						*ft_itoa2(long long int n);
+void						ft_putnchar(const char c, int i, t_pr *stut);
+void						ft_putnbr(__int128 n, t_pr *stut);
+void						ft_putstring(char *line);
+__int128_t					convert(t_pr *stut, int base);
+int							type_decimal_minus(t_pr *stut);
+int							type_decimal_plus(const char *format, t_pr *stut);
+int							type_decimal_zero(t_pr *stut);
+int							type_decimal_space(const char *format, t_pr *stut);
+void						decimal_pregular_zero(int i, t_pr *stut);
+int							type_octal_size(va_list ap, t_pr *stut);
+int							type_priority_octal(t_pr *stut);
+int							type_octal_minus(t_pr *stut);
+int							type_octal_zero(t_pr *stut);
+int							type_octal_regular(t_pr *stut);
+int							type_hex_size(va_list ap, const char *format, \
+	t_pr *stut);
+int							type_priority_hex(const char *format, t_pr *stut);
+char						*convert_hex(const char *format, t_pr *stut, \
+	int base);
+int							type_hex_minus(const char *format, t_pr *stut);
+int							type_hex_regular(const char *format, t_pr *stut);
+int							type_float_size(va_list ap, t_pr *stut);
+int							type_float_priority(t_pr *stut);
+int							float_minus(t_pr *stut);
+void						convertf(t_pr *stut);
+int							float_zero(t_pr *stut);
+int							float_plus(t_pr *stut);
+int							float_space(t_pr *stut);
+int							regular_float(t_pr *stut);
+int							ft_round(__int128_t n);
+__int128_t					afterdot(__int128_t n, int i);
+void						ft_float(long long nb, __int128_t n, long long i, \
+	t_pr *stut);
+void						convertf2(t_pr *stut);
+int							type_str(va_list ap, const char *format, \
+	t_pr *stut);
+void						ft_putnstr(const char *s, int k, t_pr *stut);
+void						raise_flag_error(char flag);
+void						raise_memory_error();
+void						raise_error(char *message);
+void						parse_colors_flags(const char *format, t_pr *stut);
+void						append_symb(char **line, char symb);
+int							ft_equal(char *one, char *two);
+int							type_address(const char *format, void *p, \
+	t_pr *stut);
+int							type_perc(t_pr *stut);
+char						*ft_strdup(char *line);
+void						empty_line(char **line);
 
 #endif
