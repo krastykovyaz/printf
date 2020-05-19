@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 14:50:10 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/05/19 09:31:53 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/05/19 10:56:27 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,9 @@ typedef	struct				s_pr
 	char					*s;
 }							t_pr;
 
-int							type_uns_space_u(const char *format, t_pr *stut);
+int							type_uns_space_u(t_pr *stut);
 int							type_uns_space_1(int i, int y, t_pr *stut);
-void						uns_space(const char *format, int y, t_pr *stut);
+void						uns_space(int y, t_pr *stut);
 void						uns_space_if_1(int y, t_pr *stut);
 int							type_uns_zero_u(t_pr *stut);
 int							uns_pzero(t_pr *stut);
@@ -60,9 +60,8 @@ int							type_uns_minus_u(t_pr *stut);
 unsigned long long			convert_u(t_pr *stut, int base);
 void						ft_putnbr_u(unsigned long long int n, t_pr *stut);
 char						*ft_itoa_u(unsigned long long nb);
-void						type_uns_priority(const char *format, t_pr *stut);
-int							type_uns_size(va_list ap, const char *format, \
-	t_pr *stut);
+void						type_uns_priority(t_pr *stut);
+int							type_uns_size(va_list ap, t_pr *stut);
 int							ft_printf(const char *format, ...);
 void						free_list(t_pr *stut);
 int							percent(va_list arg, const char *format, \

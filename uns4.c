@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/19 09:28:34 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/05/19 09:29:43 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/05/19 11:02:48 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	uns_space_if_1(int y, t_pr *stut)
 		ft_putchar(' ', stut);
 }
 
-void	uns_space(const char *format, int y, t_pr *stut)
+void	uns_space(int y, t_pr *stut)
 {
 	stut->width -= 1;
 	if (stut->width >= stut->accuracy)
@@ -67,7 +67,7 @@ int		type_uns_space_1(int i, int y, t_pr *stut)
 	return (0);
 }
 
-int		type_uns_space_u(const char *format, t_pr *stut)
+int		type_uns_space_u(t_pr *stut)
 {
 	int i;
 	int y;
@@ -80,6 +80,6 @@ int		type_uns_space_u(const char *format, t_pr *stut)
 		y = stut->accuracy;
 	if (stut->u == 0)
 		y = y + 1;
-	uns_space(format, y, stut);
+	uns_space(y, stut);
 	return (type_uns_space_1(i, y, stut));
 }

@@ -6,13 +6,13 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/19 09:13:22 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/05/19 09:29:33 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/05/19 10:55:26 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/printf.h"
 
-int		type_uns_plus_u(const char *format, t_pr *stut)
+int		type_uns_plus_u(t_pr *stut)
 {
 	int i;
 
@@ -83,7 +83,7 @@ int		type_uns_regular(t_pr *stut)
 	return (0);
 }
 
-void	type_uns_priority(const char *format, t_pr *stut)
+void	type_uns_priority(t_pr *stut)
 {
 	char	*str;
 
@@ -95,9 +95,9 @@ void	type_uns_priority(const char *format, t_pr *stut)
 		if (stut->minus)
 			type_uns_minus_u(stut);
 		else if (stut->plus)
-			type_uns_plus_u(format, stut);
+			type_uns_plus_u(stut);
 		else if (stut->space)
-			type_uns_space_u(format, stut);
+			type_uns_space_u(stut);
 		else if (stut->zero)
 			type_uns_zero_u(stut);
 	}

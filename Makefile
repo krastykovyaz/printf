@@ -6,7 +6,7 @@
 #    By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/22 15:58:40 by lnoisome          #+#    #+#              #
-#    Updated: 2020/05/19 09:36:00 by lnoisome         ###   ########.fr        #
+#    Updated: 2020/05/19 11:03:40 by lnoisome         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,79 +71,86 @@ SRC =	afterdot.c \
 		uns3.c \
 		uns4.c
 
-OBJ =	afterdot.o \
-		convert.o \
-		convert_hex.o \
-		convertf.o \
-		convertf2.o \
-		decimal_pregular_space.o \
-		flag.o \
-		float_minus.o \
-		float_plus.o \
-		float_space.o \
-		float_zero.o \
-		free_list.o \
-		ft_atoi.o \
-		ft_float.o \
-		ft_itoa.o \
-		ft_itoa2.o \
-		ft_printf.o \
-		ft_putchar.o \
-		ft_putnbr.o \
-		ft_putnchar.o \
-		ft_putnstr.o \
-		ft_putstr.o \
-		ft_round.o \
-		ft_strlen.o \
-		if_digit.o \
-		percent.o \
-		precision.o \
-		search_type.o \
-		size.o \
-		type_decimal_minus.o \
-		type_decimal_plus.o \
-		type_decimal_regular.o \
-		type_decimal_size.o \
-		type_decimal_space.o \
-		type_decimal_zero.o \
-		type_float_priority.o \
-		type_float_size.o \
-		type_hex_minus.o \
-		type_hex_regular.o \
-		type_hex_size.o \
-		type_octal_minus.o \
-		type_octal_regular.o \
-		type_octal_size.o \
-		type_octal_zero.o \
-		type_priority_octal.o \
-		type_str.o \
-		width.o \
-		type_address.o \
-		type_perc.o \
-		errors.o \
-		ft_equal.o \
-		colors.o \
-		append.o \
-		ft_strdup.o \
-		uns.o \
-		uns2.o \
-		uns3.o \
-		uns4.o
+# OBJ =	afterdot.o \
+# 		convert.o \
+# 		convert_hex.o \
+# 		convertf.o \
+# 		convertf2.o \
+# 		decimal_pregular_space.o \
+# 		flag.o \
+# 		float_minus.o \
+# 		float_plus.o \
+# 		float_space.o \
+# 		float_zero.o \
+# 		free_list.o \
+# 		ft_atoi.o \
+# 		ft_float.o \
+# 		ft_itoa.o \
+# 		ft_itoa2.o \
+# 		ft_printf.o \
+# 		ft_putchar.o \
+# 		ft_putnbr.o \
+# 		ft_putnchar.o \
+# 		ft_putnstr.o \
+# 		ft_putstr.o \
+# 		ft_round.o \
+# 		ft_strlen.o \
+# 		if_digit.o \
+# 		percent.o \
+# 		precision.o \
+# 		search_type.o \
+# 		size.o \
+# 		type_decimal_minus.o \
+# 		type_decimal_plus.o \
+# 		type_decimal_regular.o \
+# 		type_decimal_size.o \
+# 		type_decimal_space.o \
+# 		type_decimal_zero.o \
+# 		type_float_priority.o \
+# 		type_float_size.o \
+# 		type_hex_minus.o \
+# 		type_hex_regular.o \
+# 		type_hex_size.o \
+# 		type_octal_minus.o \
+# 		type_octal_regular.o \
+# 		type_octal_size.o \
+# 		type_octal_zero.o \
+# 		type_priority_octal.o \
+# 		type_str.o \
+# 		width.o \
+# 		type_address.o \
+# 		type_perc.o \
+# 		errors.o \
+# 		ft_equal.o \
+# 		colors.o \
+# 		append.o \
+# 		ft_strdup.o \
+# 		uns.o \
+# 		uns2.o \
+# 		uns3.o \
+# 		uns4.o
 
+OBJ = $(patsubst %.c, %.o, $(SRC))
+D_FILE = $(patsubst %.c, %.d, $(SRC))
 HEADER = includes/
 
 all: $(NAME)
 
-$(NAME):
-	@gcc -c  $(SRC) -I $(HEADER)
-	@ar -rc $(NAME) $(OBJ)
+$(NAME): $(OBJ)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
+
+%.o: %.c
+	gcc -Wall -Wextra -Werror -c $< -o $@ -I $(HEADER) -MD
 
 clean:
-	@rm -rf $(OBJ)
+	@rm -rf $(OBJ) $(D_FILE)
 
 fclean: clean
 	@rm -rf $(NAME)
 
 re: fclean all
+
+include $(wildcard $(D_FILE))
 
 .PHONY: all clean fclean re

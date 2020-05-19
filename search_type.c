@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:09:42 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/05/18 20:28:36 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/05/19 10:57:22 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int		search_type(va_list ap, const char *format, t_pr *stut)
 	if (format[stut->i] == 'd' || format[stut->i] == 'i')
 		type_decimal_size(ap, format, stut);
 	else if (format[stut->i] == 'u')
-		type_uns_size(ap, format, stut);
+		type_uns_size(ap, stut);
 	else if (format[stut->i] == 'o')
 		type_octal_size(ap, stut);
 	else if (format[stut->i] == 'x' || format[stut->i] == 'X')

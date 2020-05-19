@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/19 09:17:26 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/05/19 09:20:52 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/05/19 10:56:48 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void				ft_putnbr_u(unsigned long long int n, t_pr *stut)
 	ft_putchar(n % 10 + '0', stut);
 }
 
-int					type_uns_size(va_list ap, const char *format, t_pr *stut)
+int					type_uns_size(va_list ap, t_pr *stut)
 {
 	if (stut->size == 11)
 		stut->u = va_arg(ap, unsigned long long int);
@@ -70,6 +70,6 @@ int					type_uns_size(va_list ap, const char *format, t_pr *stut)
 		stut->u = (unsigned short)(va_arg(ap, unsigned int));
 	else
 		stut->u = va_arg(ap, unsigned int);
-	type_uns_priority(format, stut);
+	type_uns_priority(stut);
 	return (0);
 }
