@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:34:03 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/23 18:40:31 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/05/22 20:30:09 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ int		type_priority_hex(const char *format, t_pr *stut)
 
 	s = convert_hex(format, stut, 16);
 	stut->ptr = s;
-	free(s);
 	stut->len = ft_strlen(stut->ptr);
 	if (stut->grid && stut->a)
 		stut->width -= 2;
@@ -26,6 +25,7 @@ int		type_priority_hex(const char *format, t_pr *stut)
 		type_hex_minus(format, stut);
 	else
 		type_hex_regular(format, stut);
+	free(s);
 	return (0);
 }
 

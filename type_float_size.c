@@ -6,7 +6,7 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 09:29:36 by aleksandrko       #+#    #+#             */
-/*   Updated: 2020/04/23 18:40:17 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/05/21 11:20:12 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int		len_a_dot(t_pr *stut)
 {
-	int		nb;
-	char	*s;
-	int		i;
+	long double		nb;
+	char			*s;
+	int				i;
 
 	nb = stut->fl_save;
-	s = ft_itoa(nb);
+	s = ft_itoa(stut->fl_save);
 	i = ft_strlen(s) + 1;
 	free(s);
 	if (stut->dot == 0)

@@ -6,36 +6,48 @@
 /*   By: lnoisome <lnoisome@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/24 10:20:51 by lnoisome          #+#    #+#             */
-/*   Updated: 2020/04/24 10:34:01 by lnoisome         ###   ########.fr       */
+/*   Updated: 2020/05/24 20:56:46 by lnoisome         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/printf.h"
 
-char			*convert_hex(const char *format, t_pr *stut, int base)
+int		countj(t_pr *stut, int base)
 {
-	char		*s;
-	long int	n;
-	int			i;
+	unsigned long long int	n;
+	int						j;
 
-	i = 1;
+	j = 1;
 	n = stut->a;
 	while ((n /= base) >= 1)
-		i++;
-	if (!(s = (char *)malloc(sizeof(char) * (i + 1))))
+		j++;
+	return (j);
+}
+
+char	*convert_hex(const char *format, t_pr *stut, int base)
+{
+	char					*s;
+	unsigned long long int	n;
+	int						j;
+	int						z;
+
+	j = countj(stut, base);
+	if (!(s = (char *)malloc(sizeof(char) * (j + 1))))
 		return (NULL);
-	s[i] = '\0';
 	n = stut->a;
-	while (i--)
+	z = 0;
+	while (j--)
 	{
 		if (n % base < 10)
-			s[i] = n % base + '0';
+			s[j] = n % base + '0';
 		else
 		{
-			s[i] = (format[stut->i] == 'x' || format[stut->i] == 'p') ? \
+			s[j] = (format[stut->i] == 'x' || format[stut->i] == 'p') ? \
 			n % base + 'a' - 10 : n % base + 'A' - 10;
 		}
 		n /= base;
+		z++;
 	}
+	s[z] = '\0';
 	return (s);
 }

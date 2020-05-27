@@ -14,7 +14,7 @@
 
 int		type_uns_plus_u(t_pr *stut)
 {
-	int i;
+	int i;	
 
 	i = uns_space_p(stut);
 	if (stut->zero && !stut->dot)
